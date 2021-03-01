@@ -1,0 +1,21 @@
+body {
+    background-color: darkslategray;
+
+}
+
+#test1{
+    font-size: 200%;
+    color: white;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+#Form {
+    color : white;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
