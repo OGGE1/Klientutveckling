@@ -1,0 +1,30 @@
+
+body {
+    background-color: gray  ;
+}
+
+#namn_rubrik {
+    color: white;
+    font-size: 500%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: darkslategrey;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
