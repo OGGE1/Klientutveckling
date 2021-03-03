@@ -1,82 +1,109 @@
-
 body {
-    background-color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
+  background-color: white;
+  color: #2f4f4f;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .rubrik {
-    color: darkslategray;
-    font-size: 500%;
-    margin: 0;
-    text-align: center;
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
 }
 
 /*   MENU     */
 .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #2f4f4f;
-    text-align: center;
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2f4f4f;
+  text-align: center;
 }
 
-.menu li{
-    display: inline-block;
-    float: none;
+.menu li {
+  display: inline-block;
+  float: none;
 }
 
 .menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .menu li a:hover {
-    background-color: orange;
+  background-color: orange;
 }
 
 .menu a:active {
-    background-color: orange !important;
+  background-color: orange !important;
 }
 
-/*   PORTFOLIO.HTML      */
+/*   INDEX.HTML      */
 
 .oscar_bild {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 14px outset #2F4F4F;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 14px outset #2f4f4f;
 }
 
 .oscarinfoclass {
-    border-left: 8px groove #2F4F4F;
-    border-radius: 40px 40px 40px 40px;
+  border-left: 8px groove #2f4f4f;
+  border-radius: 40px 40px 40px 40px;
 }
 
 .oscarinfo {
-    color: darkslategray;
-    font-size: 30px;
-    display: block;
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-left: 5px solid #2f4f4f;
-    border-right: 5px solid #2F4F4F;
-    border-radius: 20px;
-    padding: 20px;
+  font-size: 30px;
+  display: block;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-left: 5px solid #2f4f4f;
+  border-right: 5px solid #2f4f4f;
+  border-radius: 20px;
+  padding: 20px;
 }
 
+/* PORTFOLIO.HTML */
+
 .projekt ul {
+  font-size: 2em;
+  list-style-type: none;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projekt a {
+  text-decoration: none;
+}
+
+.portfolio_images img {
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image_text {
+  text-align: center;
+  font-size: 2em;
+  color: #2f4f4f;
+}
+
+/* CONTACT.HTML */
+.contact_info ul {
+    font-size: 2em;
     list-style-type: none;
-    width: 0;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.projekt li {
+.map iframe {
+    display: block;
+    margin: 0 auto;
 }
-
