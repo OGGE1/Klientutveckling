@@ -1,25 +1,30 @@
 
 body {
-    background-color: gray;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
 }
 
-#namn_rubrik {
-    color: white;
+#rubrik {
+    color: darkslategray;
     font-size: 500%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
     top: 0%;
     width: 100%;
     text-align: center;
 }
 
+
+
+
+
+/*     MENU   */
 #menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: darkslategray;
+    background-color: #2f4f4f;
     position: absolute;
     top: 0%;
     width: 100%;
@@ -33,7 +38,6 @@ body {
 }
 
 #menu li a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: block;
     color: white;
     text-align: center;
@@ -45,20 +49,42 @@ body {
     background-color: orange;
 }
 
-#oscar_bild {
-    display: block;
-    margin-top: 0%;
-    margin-left: auto;
-    margin-right: auto;
+/* INDEX.HTML */
+.outer {
+    border-left: 5px solid #2f4f4f;
+    border-radius: 20px;
+    border-spacing: 10px;
+    float: left;
 }
 
-#oscarinfo {
-    color: white;
-    font-size: 32px;
+.inner p {
+    color: darkslategray;
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+}
+
+#oscar_bild {
     display: block;
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 14px outset #2F4F4F;
+}
+
+
+/*    PORTFOLIO.HTML     */
+.projekt {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.projekt ul {
+    list-style-type: square;
+    display: inline-table;
+}
+
+.projekt li {
+    display: inline;
 }
 
 
