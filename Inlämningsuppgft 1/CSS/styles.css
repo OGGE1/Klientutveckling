@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-#rubrik {
+.rubrik {
     color: darkslategray;
     font-size: 500%;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 /*   MENU     */
-#menu {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -22,12 +22,12 @@ body {
 
 }
 
-#menu li{
+.menu li{
     display: inline-block;
     float: none;
 }
 
-#menu li a {
+.menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -35,13 +35,17 @@ body {
     text-decoration: none;
 }
 
-#menu li a:hover {
+.menu li a:hover {
     background-color: orange;
+}
+
+.menu a:active {
+    background-color: orange !important;
 }
 
 /*   PORTFOLIO.HTML      */
 
-#oscar_bild {
+.oscar_bild {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,7 +57,7 @@ body {
     border-radius: 40px 40px 40px 40px;
 }
 
-#oscarinfo {
+.oscarinfo {
     color: darkslategray;
     font-size: 30px;
     display: block;
@@ -66,18 +70,13 @@ body {
     padding: 20px;
 }
 
-.projekt {
-    text-align: center;
-    margin-top: 200px;
-}
-
 .projekt ul {
-    list-style-type: square;
-    display: inline-table;
+    list-style-type: none;
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projekt li {
-    display: inline;
 }
-
 
