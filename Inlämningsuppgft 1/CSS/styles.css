@@ -1,6 +1,7 @@
 
 body {
-    background-color: gray  ;
+    background-color: gray;
+    margin: 0;
 }
 
 #namn_rubrik {
@@ -13,18 +14,51 @@ body {
     text-align: center;
 }
 
-nav {
-    position: fixed;
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkslategray;
+    position: absolute;
     top: 0%;
     width: 100%;
-    background-color: darkslategrey;
-}
-
-nav ul {
-    list-style-type: none;
     text-align: center;
+    display: table;
 }
 
-nav ul li {
+#menu li{
     display: inline-block;
+    float: none;
 }
+
+#menu li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: orange;
+}
+
+#oscar_bild {
+    display: block;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#oscarinfo {
+    color: white;
+    font-size: 32px;
+    display: block;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
