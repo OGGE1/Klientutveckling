@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-#rubrik {
+#namn_rubrik {
     color: darkslategray;
     font-size: 500%;
     position: absolute;
@@ -14,11 +14,6 @@ body {
     text-align: center;
 }
 
-
-
-
-
-/*     MENU   */
 #menu {
     list-style-type: none;
     margin: 0;
@@ -49,21 +44,6 @@ body {
     background-color: orange;
 }
 
-/* INDEX.HTML */
-.outer {
-    border-left: 5px solid #2f4f4f;
-    border-radius: 20px;
-    border-spacing: 10px;
-    float: left;
-}
-
-.inner p {
-    color: darkslategray;
-    display: inline;
-    text-align: center;
-    font-size: 30px;
-}
-
 #oscar_bild {
     display: block;
     margin-left: auto;
@@ -71,8 +51,20 @@ body {
     border: 14px outset #2F4F4F;
 }
 
+.oscarinfoclass {
+    border-left: 8px groove #2F4F4F;
+    border-radius: 40px 40px 40px 40px;
+}
 
-/*    PORTFOLIO.HTML     */
+#oscarinfo {
+    color: darkslategray;
+    font-size: 30px;
+    display: block;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 .projekt {
     text-align: center;
     margin-top: 200px;
