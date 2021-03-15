@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lektion 5</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+  </head>
+  <body class="container">
+    <h1>JQUERY</h1>
+    <h2>Type Selector</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+      molestias.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, aperiam?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+      explicabo.
+    </p>
+    <h2>ID Selector</h2>
+    <div id="demo1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi
+      qui architecto illum officia corrupti accusamus aperiam, culpa dolores
+      repellendus impedit fugiat, optio ipsum nostrum magnam! Nostrum hic itaque
+      quos!
+    </div>
+
+    <h2>Class Selector</h2>
+    <div class="demo2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet
+      itaque, maiores eos temporibus reprehenderit repudiandae voluptatibus
+      voluptate laboriosam et eaque blanditiis dolorum dignissimos placeat?
+      Optio sunt fugit ipsam dolorem.
+    </div>
+
+    <h2>This selector</h2>
+    <h4>Klicka här för att ta bort mig</h4>
+    <h4>Klicka här för att ta bort mig</h4>
+    <h4>Klicka här för att ta bort mig</h4>
+
+    <h2>Innehåll kommer att ändras via jQuery</h2>
+    <p id="demo3"></p>
+
+    <h2>Formulär</h2>
+    <form action="">
+      <input id="demo5" type="text" value="Test" />
+    </form>
+
+    <h3 id="demo6">Ta bort mig</h3>
+    <h3 id="demo7">Dölj mig</h3>
+
+    <h3>Infoga element via jQuery</h3>
+    <ul>
+      <li>List Item 1</li>
+    </ul>
+
+    <script src="JQUERY/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("Hello jQuery");
+
+        // Type selector
+        // $("p").hide();
+
+        // ID Selector
+        // $("#demo1").hide();
+
+        // Class Selector
+        $(".demo2").hide();
+
+        // This selector
+        $("h4").click(function () {
+          $(this).hide();
+        });
+
+        // Manipulera HTML
+        $("#demo3").html("Metoden html()");
+
+        // Manipulera formulär
+        //Hämta värde från input
+        let input = $("#demo5").val();
+        console.log(input);
+
+        // Ändra ett värde
+        $("#demo5").val("Hejhej");
+
+        // Ta bort element
+        $("#demo6").remove();
+
+        // Dölj element
+        $("#demo7").hide();
+
+        // Infoga element
+        $("ul").before("<p>Före listan</p>");
+        $("ul").after("<p>Efter listan</p>");
+        $("ul").prepend("<li>Start</li>");
+        $("ul").append("<li>Slut</li>");
+      });
+    </script>
+  </body>
+</html>

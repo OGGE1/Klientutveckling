@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <style>
+      div {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        display: none;
+      }
+
+      #box1 {
+        background-color: orange;
+      }
+      #box2 {
+        background-color: maroon;
+      }
+      #box3 {
+        background-color: indigo;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1>jQuery - Effects</h1>
+    <button id="showButton">Visa</button>
+    <button id="hideButton">Dölj</button>
+    <button id="toggleButton">Dölj</button>
+
+    <h2>Fade</h2>
+    <button id="fade">Fade</button>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+    <hr />
+
+    <p id="textDemo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt porro
+      expedita reprehenderit dignissimos harum minus repudiandae quam, debitis
+      sit beatae a inventore nam sapiente nobis earum ipsam veritatis nihil?
+    </p>
+
+    <script src="JQUERY/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#showButton").click(function () {
+          $("#textDemo").show(300);
+        });
+        $("#hideButton").click(function () {
+          $("#textDemo").hide(300);
+        });
+
+        $("#toggleButton").click(function () {
+          let btnText = $("#toggleButton").text();
+
+          /*
+          if (btnText == "Dölj") {
+            $("#textDemo").toggle(1000);
+            $("#toggleButton").text("Visa");
+          } else {
+            $("#textDemo").toggle(1000);
+            $("#toggleButton").text("Dölj");
+          }
+          */
+          $(this).text(function (i, text) {
+            return text == "Visa" ? "Dölj" : "Visa";
+          });
+        }); // TOGGLE
+
+        $("#fade").click(function () {
+          $("#box1").fadeTo(5000, 0.1); //0.1 (10%) opacitet
+          $("#box2").fadeTo(5000, 0.5); //0.5 (50%) opacitet
+          $("#box3").fadeTo(5000, 0.9); //0.9 (90%) opacitet
+        });
+      });
+    </script>
+  </body>
+</html>
