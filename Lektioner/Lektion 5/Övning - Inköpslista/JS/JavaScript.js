@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+  let storageArray = [];
+
   $("#button").click(function () {
     let article = $("#userInput").val();
 
@@ -21,7 +24,9 @@ $(document).ready(function () {
           "</td>" +
           "</tr>"
       );
+      storageArray.push(article);
       $("#userInput").val("");
+      localStorage.setItem("artikel_namn", JSON.stringify(storageArray));
     }
 
     $("#removeButton").click(function () {
@@ -36,4 +41,9 @@ $(document).ready(function () {
       }
     });
   });
+
+  function loadStorage() {
+
+  }
+
 });
